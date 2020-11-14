@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.warpper{
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.text-center{
+   text-align: center;
+}
+
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   
+
+}
+
+.navbar{
+	background-color: #000;
+    border-top: 4px solid rgb(22, 191, 197);
+    padding: 0.5em 0;
+    color: #fff;
+
+}
+
+.navbar-right li{
+   list-style: none;
+
+
+
+}
+
+.navbar .navbar-right li a{
+    color: #ffff;
+    text-decoration: none;
+
+
+}
+
+
+.navbar .navbar-right li a:hover{
+    color:rgb(22, 191, 197);
+}
+
+.navbar .logo_nav{
+     margin-left: 4.8em;
+}
+
+#grd-bloc{
+    margin-top: 50px;
+}
+
+
+.box{
+	cursor: pointer;
+	margin-right: 30px;
+	margin-top: 15px;
+	padding: 15px;
+}
+
+.box:hover{
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+}
+.card-body a{
+    text-decoration: none;
+    font-weight: 500;
+    color:rgb(51, 97, 97);
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+
+
+.card-body a:hover {
+	 color:rgb(22, 191, 197) ;
+	}
+
+
+.dark-row{
+    background:#AEC5E8;
+
+}
+.light-row{
+
+    background:#F1F3F0;
+}
+/*---------------------------register---------------------*/
+
+.container .registre{
+border: 0.5px solid rgba(189, 187, 189, 0.877);
+margin-bottom: 20px;
+padding: 10PX;
+margin-top: -20px;
+}
+#register{
+    margin-top:60px;
+    padding: 1px;
+}
+#register h5{
+    color:rgb(22, 191, 197);
+}
+
+#register-form{
+    width: 100%;
+     padding: 0;
+    margin: auto;
+    font-size: 13px;
+}
+
+.bloc{
+
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.bloc input{
+    border: 0.5px solid rgba(211, 208, 211, 0.877) ;
+    width: 100%;
+    height: 35px;
+    font-size: 13PX;
+    background-color: rgba(250, 247, 250, 0.877);
+    border-radius: 2px;
+}
+
+.bloc input:focus {
+     border:0.5px solid rgba(43, 165, 173, 0.877) ; 
+     }
+
+
+.col-md-12{
+   margin-top: 4px;
+    font-size: 13px;
+}
+.row hr{
+    width: 70%;
+    margin: auto;
+}
+
+.row hr .fas{
+    opacity:0.3;
+    font-size: 1px;
+}
+
+.bouton{
+    width: 80%;
+    margin: auto;
+
+}
+
+ .bouton button{
+     width: 100%;
+     padding: 2px;
+     opacity:0.3;
+     border-radius: none;
+     height: 35px;
+
+}
+
+.select select{
+      border: 0.5px solid rgba(211, 208, 211, 0.877) ;
+    width: 100%;
+     height: 35px;
+    font-size: 13PX;
+    background-color: rgba(250, 247, 250, 0.877);
+    border-radius: 2px;
+}
+
+.rad input{
+
+     border: 0.5px solid rgba(211, 208, 211, 0.877) ;
+    width: 100%;
+   padding-top: 6px;
+    font-size: 13PX;
+    background-color: rgba(250, 247, 250, 0.877);
+    border-radius: 2px;
+   
+}

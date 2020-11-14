@@ -1,0 +1,96 @@
+body{
+     font-family:lora; 
+}
+
+#teacher{
+    width: 80%;
+    margin: auto;
+    font-family: lora;
+}
+
+h1{
+    font-family: lora;
+  
+}
+
+.entete{
+    padding-top: 0;
+    height: 50px;
+    background-color: #E3EBED;
+    font-size: 30px;
+    text-transform: capitalize;
+    border-left: 2px solid #707070;
+    
+}
+
+.no-gutter p >a{
+    height: 100%;
+    background-color: #4472C4;
+    width: 100%;
+}
+
+.no-gutter > .first{
+   height: 100%;
+  
+}
+
+
+
+
+.no-gutter > [class*='col-'] {
+    padding-right:0px;
+    padding-left:0px;
+
+    
+}
+.image{
+    border: 1px solid #e4e1e1;
+    
+}
+img{
+    width: 100%;
+}
+
+.P{
+    text-decoration: underline;
+}
+.btn{
+    background-color: #4472C4;
+    border-radius: none;
+    border:  1px solid #5663A8;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info .respo{
+    margin-left: 30px;
+}
+
+.horaire{
+    width: 50%;
+    margin: auto;
+
+}
+
+.horaire form > .heure{
+
+    width: 70%;
+    margin: auto;
+   
+}
+
+
+.horaire input[type='time']{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.horaire input[type='submit']{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+}

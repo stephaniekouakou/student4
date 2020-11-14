@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block body %}
+   {% if request.session.logged_in %}
+     <div id="page-sign">
+
+         <h1> {{request.session.name}},</h1>
+         {% if messages %}
+            {% for msg in messages %}
+            <div class="col-md">
+               <div class=" text-muted alert alert-success">{{msg.message}} </div>
+               <span class="text-muted">date:{% now "jS F Y H:i" %} <a href="{% url 'logout' %}"> Se deconnecter</a> </span>
+            </div>
+            {% endfor %}
+         {% endif %}
+
+     </div>
+    
+
+   {% endif %}
+   
+{% endblock %}
+

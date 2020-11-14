@@ -1,0 +1,68 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block body %}
+
+<div class="container-fluid row" id="login">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <div class="card">
+                    <H1 class="text-center"> Connexion </H1>
+                    <div class="card-body">
+
+                        <a href="#" class="btn btn-sm btn-block btn-primary face"> <i class="fas fa-unlock-alt"></i> </a>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <hr>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="text-muted"></p>
+                            </div>
+                            <div class="col-md-5">
+                                <hr>
+                            </div>
+                        </div>
+                        {% if messages %}
+                            {% for msg in messages %}
+                                <div class="col-md-12 alert alert-danger">{{msg.message}}</div>
+                            {% endfor %}
+                        {% endif %}
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                           
+                            <div class="form-group">
+                                <input type="email" name='email' class="form-control form-control-sm"
+                                    placeholder="Email" value="{{data.email}}">
+                            </div>
+                          
+                            <div class="form-group">
+                                <input type="password" name='password' class="form-control form-control-sm"
+                                    placeholder="password" value="{{data.password}}" id="passwordfield">
+                                 
+                            </div>
+                           
+
+                            <input type="submit" value="Enregistrer" name="register"
+                                class="btn btn-sm btn-block btn-primary" id='enrg'>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <p>vous n'avez pas de compte?<a href="{% url 'register'%}">creer un compte</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="{% static 'js/auth.js'%}"></script>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block body %}
+<div class="container-fluid row " id="page-capture" >
+<div class="card" id="card">
+    <h4 class="capture"> <small>Laisser nous une photo </small> </h4>
+        <div class="card-body">
+            <div class="card mt-2">
+                <form action="{% url 'capture' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="hidden" name="id_student" id="" value='{{request.session.id}}'>
+                        <small></small>
+                        <button type="submit" class="btn btn-sm btn-block" name='cap'><i class="fas fa-camera"></i>
+                            Prendre une photo
+                        </button>
+                        <div class= "row">
+
+                            {% if photocapture %}
+                            <div class="col-md-6">
+                                <img src="{{MEDIA_URL}}{{photocapture.photo}}" alt=""  class="img-fluid rounded ">
+                            </div>
+                            
+                            {% endif %}
+                            {% if messages %}
+                            {% for msg in messages %}
+                            <div class="col-md-6">
+                                    <div class=" text-muted alert alert-success">{{msg.message}}  </div>
+                                    <span class="text-muted">connectez vous pour signer, <a href="{% url 'login' %}">cliquer ici </a></span> <br>
+                                    <span class="text-muted">retour a la page <a href="{% url 'home' %}"> d'acceuil</a> </span>
+                            </div>
+                            
+                            {% endfor %}
+                            {% endif %}
+                               
+                        </div>
+                      
+                           
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+</div>
+</div>
+{% endblock %}

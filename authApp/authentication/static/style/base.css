@@ -1,0 +1,111 @@
+.text-center{
+   text-align: center;
+}
+
+
+
+
+#register .lien{
+      background-color: rgba(43, 165, 173, 0.877);
+      color: seashell;
+}
+
+#enrg{
+   background-color: rgba(43, 165, 173, 0.877);
+}
+
+#enrg:hover{
+   background-color:rgba(15, 161, 190, 0.877);  
+}
+p a{
+   color: orangered;
+}
+
+p a:hover{
+   color: lightsalmon;
+}
+
+#login .face{
+   background-color: rgba(33, 143, 151, 0.877);
+}
+
+#login .enrg{
+    background-color: rgba(33, 143, 151, 0.877);
+}
+
+#page-capture{
+   width: 90%;
+   margin: auto;
+
+}
+
+#page-capture h1{
+   font-family: lora;
+   font-size: 30px;
+   text-align: center;
+   color: cadetblue;
+   text-transform: capitalize;
+}
+
+#page-capture #card{
+   width: 100%;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+    margin-top: 50px;
+
+}
+
+#page-capture h4{
+   text-align: center;
+   font-family: lora;
+}
+
+
+#page-capture img{
+   display: block;
+   width: 800px;
+   height: 300px;
+   margin-top: 10px;
+   text-align: center;
+}
+
+#page-capture button{
+    background-color: #AEC5E8;
+    border: 1px solid rgb(22, 191, 197);
+  
+}
+
+#page-capture .card{
+   width: 60%;
+   margin: auto;
+}
+
+#page-capture .alert{
+   font-family: lora;
+   height: 50px;
+   font-size: 14px;
+   margin-top: 10px;
+}
+
+#page-capture a{
+   text-decoration: none;
+   color: orangered;
+   font-style: italic;
+   font-size: 13px;
+}
+
+#page-sign{
+   width: 60%;
+   margin: auto;
+
+   
+}
+
+#page-sign h1{
+   font-family: lora;
+   color: rgba(33, 143, 151, 0.877);
+   text-align: center;
+}
+
+#page-sign .col-md{
+ text-align: center;
+}

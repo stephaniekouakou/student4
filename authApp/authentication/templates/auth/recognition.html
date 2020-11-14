@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block body %}
+<div class="container" id="page-capture">
+  <h1 class="text-center"> Bienvenue {{request.session.name}} ! </h1>
+    {% if messages %}
+    {% for msg in messages %}
+    <div class="col-md-12 alert alert-danger">{{msg.message}}</div>
+    {% endfor %}
+    {% endif %}
+  <form action="{% url 'recognition' %}"  method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="id_user" value="{{request.session.id_student}}">
+    <input type="hidden" name="fullname" value="{{request.session.name}}">
+    <div class="form-group">
+         <div class="card">
+           <div class="card-body">
+            <button type="submit" class="btn btn-sm btn-block" name='cap'><i class="fas fa-smile"></i>
+              Reconnaissance faciale
+            </button>
+            </div>
+        </div>
+    </div>
+   
+  </form>
+</div>
+{% endblock %}

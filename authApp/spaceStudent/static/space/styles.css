@@ -1,0 +1,46 @@
+
+body{
+     font-family:lora; 
+}
+#student{
+    width: 80%;
+    margin: auto;
+      font-family: lora;
+}
+h1{
+    font-family: lora;
+  
+}
+
+.entete{
+    padding: 12px;
+    background-color: #E3EBED;
+    font-size: 30px;
+    text-transform: capitalize;
+    
+    border-left: 2px solid #707070;
+    
+}
+.image{
+    border: 1px solid #e4e1e1;
+    
+}
+img{
+    width: 100%;
+}
+
+.P{
+    text-decoration: underline;
+}
+.btn{
+    background-color: #4472C4;
+    border-radius: none;
+    border:  1px solid #5663A8;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info .respo{
+    margin-left: 30px;
+}
